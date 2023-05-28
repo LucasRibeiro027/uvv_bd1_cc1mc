@@ -130,17 +130,17 @@ COMMENT ON COLUMN Lojas.estoques.quantidade                IS 'Coluna quantidade
 
 --Crie a tabela clientes
 CREATE TABLE    Lojas.clientes (
-                cliente_id 	                               NUMERIC(38)  NOT NULL,
-                email 		                                   VARCHAR(255) NOT NULL,
-                nome 		                                    VARCHAR(255) NOT NULL,
-                telefone1 	                                VARCHAR(20),
-                telefone2 	                                VARCHAR(20),
-                telefone3 	                                VARCHAR(20),
+                cliente_id                                 NUMERIC(38)  NOT NULL,
+                email                                      VARCHAR(255) NOT NULL,
+                nome                                       VARCHAR(255) NOT NULL,
+                telefone1                                  VARCHAR(20),
+                telefone2                                  VARCHAR(20),
+                telefone3                                  VARCHAR(20),
                 CONSTRAINT pk_clientes PRIMARY KEY (cliente_id)
 );
 
 --Faça os comentários da tabela e das colunas
-COMMENT ON TABLE  Lojas.clientes 	                         IS 'Tabela clientes do Banco de Dados Uvv, contêm os dados dos clientes';
+COMMENT ON TABLE  Lojas.clientes                           IS 'Tabela clientes do Banco de Dados Uvv, contêm os dados dos clientes';
 COMMENT ON COLUMN Lojas.clientes.cliente_id                IS 'Coluna cliente_id da tabela clientes, PK da tabela clientes, contêm o id do cliente';
 COMMENT ON COLUMN Lojas.clientes.email 	                   IS 'Coluna email da tabela clientes, contêm o email do cliente';
 COMMENT ON COLUMN Lojas.clientes.nome                      IS 'Coluna nome da tabela clientes, contêm o nome do cliente como no RG';
