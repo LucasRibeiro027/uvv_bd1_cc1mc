@@ -35,7 +35,7 @@ COMMENT ON DATABAS IS 'Banco de dados Uvv';
 \c uvv lucas;
 
 --Verifique se o schema lojas existe e apague-o
-DROP SCHEMA IF EXISTS lojas;
+DROP SCHEMA IF EXISTS Lojas;
 
 --Crie o Schema Lojas
 CREATE SCHEMA Lojas AUTHORIZATION lucas;
@@ -52,7 +52,7 @@ alter user lucas
 
 --Faça que seu usuário seja o dono do schema
 set search_path to Lojas,"$user",public;
-alter schema lojas owner to lucas;
+alter schema Lojas owner to lucas;
 
 --Crie a tabela lojas
 CREATE TABLE    Lojas.lojas (
@@ -87,10 +87,10 @@ COMMENT ON COLUMN Lojas.lojas.logo_ultima_atualizacao      IS 'Coluna logo_ultim
 --Crie a tabela produtos
 CREATE TABLE    Lojas.produtos (
                 produto_id 	                               NUMERIC(38)  NOT NULL,
-                nome 		                                   VARCHAR(255) NOT NULL,
+                nome 		                                    VARCHAR(255) NOT NULL,
                 preco_unitario                             NUMERIC(10,2),
                 detalhes 	                                 BYTEA,
-                imagem 		                                 BYTEA,
+                imagem 		                                  BYTEA,
                 imagem_mime_type                           VARCHAR(512),
                 imagem_arquivo                             VARCHAR(512),
                 imagem_charset                             VARCHAR(512),
@@ -131,11 +131,11 @@ COMMENT ON COLUMN Lojas.estoques.quantidade                IS 'Coluna quantidade
 --Crie a tabela clientes
 CREATE TABLE    Lojas.clientes (
                 cliente_id 	                               NUMERIC(38)  NOT NULL,
-                email 		                                 VARCHAR(255) NOT NULL,
-                nome 		                                   VARCHAR(255) NOT NULL,
-                telefone1 	                               VARCHAR(20),
-                telefone2 	                               VARCHAR(20),
-                telefone3 	                               VARCHAR(20),
+                email 		                                   VARCHAR(255) NOT NULL,
+                nome 		                                    VARCHAR(255) NOT NULL,
+                telefone1 	                                VARCHAR(20),
+                telefone2 	                                VARCHAR(20),
+                telefone3 	                                VARCHAR(20),
                 CONSTRAINT pk_clientes PRIMARY KEY (cliente_id)
 );
 
