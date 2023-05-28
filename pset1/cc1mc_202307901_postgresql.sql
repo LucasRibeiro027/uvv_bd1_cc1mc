@@ -86,11 +86,11 @@ COMMENT ON COLUMN Lojas.lojas.logo_ultima_atualizacao      IS 'Coluna logo_ultim
 
 --Crie a tabela produtos
 CREATE TABLE    Lojas.produtos (
-                produto_id 	                               NUMERIC(38)  NOT NULL,
+                produto_id                                 NUMERIC(38)  NOT NULL,
                 nome                                       VARCHAR(255) NOT NULL,
                 preco_unitario                             NUMERIC(10,2),
-                detalhes 	                                 BYTEA,
-                imagem 		                                  BYTEA,
+                detalhes                                   BYTEA,
+                imagem                                     BYTEA,
                 imagem_mime_type                           VARCHAR(512),
                 imagem_arquivo                             VARCHAR(512),
                 imagem_charset                             VARCHAR(512),
