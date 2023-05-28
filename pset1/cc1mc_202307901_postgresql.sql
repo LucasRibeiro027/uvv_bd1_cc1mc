@@ -181,8 +181,8 @@ CREATE TABLE Lojas.pedidos_itens (
 COMMENT ON TABLE  Lojas.pedidos_itens                      IS 'Tabela pedidos_itens do Banco de Dados Uvv, contêm dados dos itens pedidos';
 COMMENT ON COLUMN Lojas.pedidos_itens.pedido_id            IS 'Coluna pedido_id da tabela pedidos_itens, PFK da tabela pedidos_itens, FK para a tabela pedidos, contêm o id do pedido';
 COMMENT ON COLUMN Lojas.pedidos_itens.produto_id           IS 'Coluna produto_id da tabela pedidos_itens, PFK da tabela pedidos_itens, FK para a tabela produtos, contêm o id do produto';
-COMMENT ON COLUMN Lojas.pedidos_itens.numero_da_           IS 'Coluna numero_da_linha da tabela pedidos_itens, contêm o numero da linha do item pedido';
-COMMENT ON COLUMN Lojas.pedidos_itens.preco_unit           IS 'Coluna preco_unitario da tabela pedidos_itens, contêm o peço unitario do item pedido';
+COMMENT ON COLUMN Lojas.pedidos_itens.numero_da_linha      IS 'Coluna numero_da_linha da tabela pedidos_itens, contêm o numero da linha do item pedido';
+COMMENT ON COLUMN Lojas.pedidos_itens.preco_unitario       IS 'Coluna preco_unitario da tabela pedidos_itens, contêm o peço unitario do item pedido';
 COMMENT ON COLUMN Lojas.pedidos_itens.quantidade           IS 'Coluna quantidade da tabela pedidos_itens, contêm a quantidade de intens pedidos';
 COMMENT ON COLUMN Lojas.pedidos_itens.envio_id             IS 'Coluna envio_id da tabela pedidos_itens, FK para a tabela envios , contêm o id do envio ';
 
@@ -314,7 +314,7 @@ CHECK ( endereco_fisico ~* '^[A-Za-z0-9\s.,#-]+$') ;
 
 ALTER TABLE lojas.lojas
 ADD CONSTRAINT cc_lojas_endereco
-CHECK (enderec IS NOT NULL OR endereco_ IS NOT NULL) ;
+CHECK (endereco_web IS NOT NULL OR endereco_fisico IS NOT NULL) ;
 
 ALTER TABLE lojas
 ADD CONSTRAINT cc_lojas_latitude
