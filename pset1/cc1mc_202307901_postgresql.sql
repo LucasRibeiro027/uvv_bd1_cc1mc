@@ -29,7 +29,7 @@ alter database uvv owner to lucas;
 \setenv PGPASSWORD raiz2211
 
 --Faça o comentário para o banco de dados
-COMMENT ON DATABAS IS 'Banco de dados Uvv';
+COMMENT ON DATABASE uvv IS 'Banco de dados Uvv';
 
 --Use o Banco de dados com seu usuário
 \c uvv lucas;
@@ -41,7 +41,7 @@ DROP SCHEMA IF EXISTS lojas;
 CREATE SCHEMA Lojas AUTHORIZATION lucas;
 
 --Faça o comentário do Schema
-COMMENT ON SCHEMA  IS 'Schema da Lojas Uvv';
+COMMENT ON SCHEMA Lojas IS 'Schema da Lojas Uvv';
 
 --Defina o Search_Path
 set search_path to Lojas,"$user",public;
