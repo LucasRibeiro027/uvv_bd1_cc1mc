@@ -210,7 +210,7 @@ COMMENT ON COLUMN Lojas.envios.cliente_id                  IS 'Coluna cliente_id
 COMMENT ON COLUMN Lojas.envios.endereco_entrega            IS 'Coluna endereco_entrega da tabela envios, contêm o endereço de entrega do pedido';
 COMMENT ON COLUMN Lojas.envios.status                      IS 'Coluna status da tabela envios, contêm o status do envio';
 
-                                                         --Faça as constraints de Foreign Keys 
+                                                              --Faça as constraints de Foreign Keys 
 
 --PK da tabela clientes vira FK na tabela pedidos através do relacionamento não identificado
 ALTER TABLE Lojas.pedidos 
