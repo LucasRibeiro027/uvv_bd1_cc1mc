@@ -4,7 +4,7 @@
 ## PSET 1 2023/1
 
 Professor | Aluno 
----| --- | ---
+---| --- 
 Abrantes | Lucas de Araujo Ribeiro
 
 
