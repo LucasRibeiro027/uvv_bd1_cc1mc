@@ -22,14 +22,16 @@ set role lucas;
   LC_CTYPE   = 'pt_BR.UTF-8'
   ALLOW_CONNECTIONS = true;
 
+                                                          --Faça o comentário para o banco de dados
+COMMENT ON DATABASE uvv IS 'Banco de dados onde será armazenado informações das Lojas UVV';
+
                                                     --Altere o dono do Banco de Dados uvv para seu usuário
 alter database uvv owner to lucas;
 
                                                              --Entrar com a senha criptografada
 \setenv PGPASSWORD raiz2211
 
-                                                          --Faça o comentário para o banco de dados
-COMMENT ON DATABASE uvv IS 'Banco de dados onde será armazenado informações das Lojas UVV';
+                                                          
 
                                                              --Use o Banco de dados com seu usuário
 \c uvv lucas;
