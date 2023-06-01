@@ -2,7 +2,7 @@
 
 ### Script Global (cc1mc_202307901_postgresql.sql)
 
-* Script do Banco de Dados uvv para ser rodado em qualquer máquina
+* Script SQL do Banco de Dados uvv para ser rodado em qualquer máquina
 
 ### Diagrama em PDF (cc1mc_202307901_postgresql.architect.pdf)
 
