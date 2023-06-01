@@ -4,7 +4,7 @@
 
 * Script do Banco de Dados uvv para ser rodado em qualquer máquina
 
-### Diagrama em PDF (cc1mc_202307901_postgresql.pdf)
+### Diagrama em PDF (cc1mc_202307901_postgresql.architect.pdf)
 
 * Diagrama do banco de dados uvv em pdf 
 
